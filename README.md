@@ -43,8 +43,8 @@ Implement TSPC positive edge-triggered D Flip Flop (Follow the Textbook for the 
     V2 D 0 PULSE(0 1.8 0 0.1f 0.1f 16n 25n) 
     C1 Q 0 500f
     C2 D 0 2f
-   .model NMOS NMOS
-   .model PMOS PMOS
+    .model NMOS NMOS
+    .model PMOS PMOS
    
 ## Simulation Analysis
 ![image](https://user-images.githubusercontent.com/100671647/234935217-90eb78b1-8c78-4657-b441-0514cef93257.png)
@@ -65,7 +65,6 @@ To obtain the set-up time of the register, we progressively skew the input with 
 #### Set-up time=71ps
 
 ### Hold time
-
 Minimum time required for which the data should be stable after the active edge of the clock.
 ### Hold Rise time
 In a similar fashion, the hold time can be simulated. The D input edge is once again skewed relative to the clock signal till the circuit stop functioning.
