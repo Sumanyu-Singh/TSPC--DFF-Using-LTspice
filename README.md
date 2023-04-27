@@ -1,7 +1,7 @@
 # TSPC_DFF_Using_LTspice
 True Single-Phase Clock (TSPC) Flip-Flops, based on dynamic logic implementation, are area-saving and high-speed compared to standard static flip-flops. Furthermore, logic gates can be embedded into TSPC flip-flops which significantly improves performance.
 
-## *Contents*
+## Contents
 ------------
 * [Problem Statement](#problem-statement)
 * [Detailed Transistors Sizing Analysis](#detailed-transistors-sizing-analysis)
@@ -15,7 +15,7 @@ True Single-Phase Clock (TSPC) Flip-Flops, based on dynamic logic implementation
 
 ---------
 ## Problem Statement
-Implement TSPC positive edge-triggered D Flip Flop (Follow the Textbook for the design). Compute its setup and hold time. Optimize its power delay product. Compute the maximum operating frequency.
+Implement TSPC positive edge-triggered D Flip Flop. Compute its setup and hold time. Optimize its power delay product. Compute the maximum operating frequency.
 ## Detailed Transistors Sizing Analysis
 ![trans_sizingf](https://user-images.githubusercontent.com/100671647/234932224-da83b432-47ab-480e-a149-d36a67bd2669.png)
 ![logic_effort](https://user-images.githubusercontent.com/100671647/234932505-aa8d7bca-e161-4fad-a791-af0eded19ac2.png)
