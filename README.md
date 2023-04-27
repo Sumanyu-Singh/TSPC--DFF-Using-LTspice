@@ -52,25 +52,29 @@ Implement TSPC positive edge-triggered D Flip Flop (Follow the Textbook for the 
 ![image](https://user-images.githubusercontent.com/100671647/234935615-8a24bbc2-38d5-49f1-80ef-e5916920c51e.png)
 *Propagation Delay* = 140ps
 ## Calculation of Setup and Hold Time
-*Setup time*
+### Setup time
+
 Minimum time requires for which the data should be stable before the active edge of the clock. Tcq is clock to output delay. Tdc is data to active edge difference.
-•	Setup Rise time
+### Setup Rise time
+
 To obtain the set-up time of the register, we progressively skew the input with respect to the clock edge until the circuit fails.The set-up time simulation assuming a skew of 71 psec and 61 psec. For the 71 psec case, the correct value of input D is sampled (in this case, the Q output remains at the value of VDD). For a skew of 61 psec, an incorrect value propagates to the output (in this case, the Q output transitions to 0). Node QM starts to go high while the output of I2 (the input to transmission gate T2 ) starts to fall. However, the clock is enabled before the two nodes across the transmission gate (T2 ) settle to the same value and therefore, results in an incorrect value written into the master latch.The set-up time for this register is therefore 71psec.
 ![image](https://user-images.githubusercontent.com/100671647/234935924-21de4e72-f6bb-440c-a6b7-5b3f6cc9753e.png)
 ![image](https://user-images.githubusercontent.com/100671647/234936047-282d0fd8-4788-43f3-9e67-1ed9eaa8754c.png)
 *Below analysis shows setup time calculation*
 ![image](https://user-images.githubusercontent.com/100671647/234936121-03e497e5-4976-4995-88b5-79a6707a3058.png)
-*Set-up time=71ps*
+#### Set-up time=71ps
 
-•	*Hold time*
+### Hold time
+
 Minimum time required for which the data should be stable after the active edge of the clock.
- •	*Hold Rise time*
+### Hold Rise time
 In a similar fashion, the hold time can be simulated. The D input edge is once again skewed relative to the clock signal till the circuit stop functioning.
 ![image](https://user-images.githubusercontent.com/100671647/234936356-0456815c-6673-4e3e-a447-b76a9290663d.png)
 ![image](https://user-images.githubusercontent.com/100671647/234936368-87f93d03-439f-4ad9-9e91-400093bee69c.png)
 ![image](https://user-images.githubusercontent.com/100671647/234936383-b917783a-274d-4f44-82bc-cd901ba2fc83.png)
-*Above analysis result shows calculation of hold time.
-Hold time=61.2ps *
+
+#### Above analysis result shows calculation of hold time.
+#### Hold time=61.2ps 
 
 ## Calculation of Power Delay Product
 ![image](https://user-images.githubusercontent.com/100671647/234936497-0f9b20af-d98e-49ec-9853-c7ffc776f9d2.png)
